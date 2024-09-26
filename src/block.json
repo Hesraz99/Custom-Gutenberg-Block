@@ -1,0 +1,16 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/custom-block",
+	"version": "0.1.0",
+	"title": "fancy header",
+	"category": "text",
+	"icon": "art",
+	"description": "Example block ",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "custom-block",
+	"editorScript": "file:./index.js"
+}
