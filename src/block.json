@@ -1,16 +1,28 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 3,
-	"name": "create-block/custom-block",
-	"version": "0.1.0",
-	"title": "fancy header",
-	"category": "text",
-	"icon": "art",
-	"description": "Example block ",
-	"example": {},
-	"supports": {
-		"html": false
-	},
-	"textdomain": "custom-block",
-	"editorScript": "file:./index.js"
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "create-block/custom-block",
+    "version": "0.1.0",
+    "title": "fancy header",
+    "category": "text",
+    "icon": "art",
+    "description": "Example block ",
+    "example": {},
+    "supports": {
+        "html": false
+    },
+    "textdomain": "custom-block",
+    "attributes": {
+        "content": {
+            "type": "string",
+            "source": "html",
+            "selector": "h2"
+        },
+        "underline_color": {
+            "type": "string",
+            "default": "#f87171"
+        }
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./index.css"
 }
