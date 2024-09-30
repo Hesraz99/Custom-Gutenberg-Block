@@ -11,7 +11,16 @@
  * Text Domain:       custom-block
  */
 
-function create_blocks() {
-    register_block_type(__DIR__ . '/build');
+function create_blocks()
+{
+    $blocks = [
+        [
+            'name' => 'fancy-header'
+        ]
+    ];
+
+    foreach ($blocks as $block) {
+        register_block_type(__DIR__ . '/build/blocks/' . $block['name']);
+    }
 }
 add_action('init', 'create_blocks');
