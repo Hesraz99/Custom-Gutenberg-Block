@@ -16,6 +16,9 @@ function create_blocks()
     $blocks = [
         [
             'name' => 'fancy-header'
+        ],
+        [
+            'name' => 'search-form'
         ]
     ];
 
